@@ -149,7 +149,7 @@ HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
   var message = won ? "ようこそ！日本最大級、最高級の愛と夢と癒しの娯楽施設、プラチナ・ジェイルへ！" : mytxt[text3(maxscore)-2];
 
-  if (typeof ga !== " ") {
+  if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
   }
 
