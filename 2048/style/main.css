@@ -1,26 +1,33 @@
 @import url(fonts/clear-sans.css);
 html, body {
-  margin: 0;
-  padding: 0;
-  background: #faf8ef;
-  color: #776e65;
-  font-family: "Clear Sans", "Helvetica Neue", "Microsoft Yahei", Arial, sans-serif;
-  font-size: 18px; }
+	margin: 0;
+	padding: 0;
+	color: #14192C;
+	font-family: "Clear Sans", "Helvetica Neue", "Microsoft Yahei", Arial, sans-serif;
+	font-size: 18px;
+	background-color: #faf8ef;
+	background-image: url(http://image15-c.poco.cn/mypoco/myphoto/20140327/05/6653711520140327052148030.jpg);
+}
 
 body {
   margin: 80px 0; }
 
 .heading:after {
-  content: "";
-  display: block;
-  clear: both; }
+	content: "";
+	display: block;
+	clear: none;
+	background-position: center;
+}
 
 h1.title {
-  font-size: 80px;
-  font-weight: bold;
-  margin: 0;
-  display: block;
-  float: left; }
+	display:block;
+	font-size: 80px;
+	font-weight: bold;
+	margin: 0;
+	float: left;
+	border-top-style: 10px;
+	border-bottom-style: 10px;
+}
 
 @-webkit-keyframes move-up {
   0% {
@@ -50,32 +57,35 @@ h1.title {
     opacity: 0; } }
 
 .scores-container {
-  float: right;
-  text-align: right; }
+	float: right;
+	text-align: right;
+}
 
 .score-container, .best-container {
-  position: relative;
-  display: inline-block;
-  background: #bbada0;
-  padding: 15px 25px;
-  font-size: 25px;
-  height: 25px;
-  line-height: 47px;
-  font-weight: bold;
-  border-radius: 3px;
-  color: white;
-  margin-top: 8px;
-  text-align: center; }
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px;
+	font-size: 25px;
+	height: 25px;
+	line-height: 47px;
+	font-weight: bold;
+	border-radius: 3px;
+	color: white;
+	margin-top: 8px;
+	text-align: center;
+	background-color: #32406E;
+}
   .score-container:after, .best-container:after {
-    position: absolute;
-    width: 100%;
-    top: 10px;
-    left: 0;
-    text-transform: uppercase;
-    font-size: 13px;
-    line-height: 13px;
-    text-align: center;
-    color: #eee4da; }
+	position: absolute;
+	width: 100%;
+	top: 10px;
+	left: 0;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 13px;
+	text-align: center;
+	color: #9DA3BF;
+}
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -104,7 +114,7 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #776e65;
+  color: #14192C;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -114,7 +124,7 @@ strong.important {
 
 hr {
   border: none;
-  border-bottom: 1px solid #d8d4d0;
+  border-bottom: 1px solid #4F5C8C;
   margin-top: 20px;
   margin-bottom: 30px; }
 
@@ -144,20 +154,22 @@ hr {
     opacity: 1; } }
 
 .game-container {
-  margin-top: 40px;
-  position: relative;
-  padding: 15px;
-  cursor: default;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  background: #bbada0;
-  border-radius: 6px;
-  width: 500px;
-  height: 500px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+	margin-top: 40px;
+	position: relative;
+	padding: 15px;
+	cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+	border-radius: 6px;
+	width: 500px;
+	height: 500px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #32406E;
+	background-position: center;
+}
   .game-container .game-message {
     display: none;
     position: absolute;
@@ -185,11 +197,11 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #8f7a66;
+      background: #001F5C;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
-      color: #f9f6f2;
+      color: #B1B5CC;
       height: 40px;
       line-height: 42px;
       margin-left: 9px; }
@@ -201,7 +213,7 @@ hr {
       margin-left: 10px; }
     .game-container .game-message.game-won {
       background: rgba(237, 194, 46, 0.5);
-      color: #f9f6f2; }
+      color: #B1B5CC; }
       .game-container .game-message.game-won a.keep-playing-button {
         display: inline-block; }
     .game-container .game-message.game-won, .game-container .game-message.game-over {
@@ -313,53 +325,44 @@ hr {
   transition-property: transform; }
   .tile .tile-inner {
     border-radius: 3px;
-    background: #eee4da;
+    background: #9DA3BF;
     text-align: center;
     font-weight: bold;
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    background: #eee4da;
+    background-image: url(http://image15-c.poco.cn/mypoco/myphoto/20140327/02/6653711520140327022045072.jpg);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
-    background: #ede0c8;
+    background-image:url(http://image15-c.poco.cn/mypoco/myphoto/20140327/02/6653711520140327022101089.jpg);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
-    color: #f9f6f2;
-    background: #f2b179; }
+    background-image:url(http://image15-c.poco.cn/mypoco/myphoto/20140327/02/6653711520140327022134073.jpg
+); }
   .tile.tile-16 .tile-inner {
-    color: #f9f6f2;
-    background: #f59563; }
+    background-image:url(http://image226-c.poco.cn/mypoco/myphoto/20140327/15/6653711520140327152900042.jpg); }
   .tile.tile-32 .tile-inner {
-    color: #f9f6f2;
-    background: #f67c5f; }
+    background-image:url(http://image15-c.poco.cn/mypoco/myphoto/20140327/02/6653711520140327022342075.jpg);}
   .tile.tile-64 .tile-inner {
-    color: #f9f6f2;
-    background: #f65e3b; }
+    background-image:url(http://image15-c.poco.cn/mypoco/myphoto/20140327/02/6653711520140327022400035.jpg); }
   .tile.tile-128 .tile-inner {
-    color: #f9f6f2;
-    background: #edcf72;
+    background-image:url(http://image15-c.poco.cn/mypoco/myphoto/20140327/02/6653711520140327022417073.jpg);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286); }
   .tile.tile-256 .tile-inner {
-    color: #f9f6f2;
-    background: #edcc61;
+    background-image:url(http://image15-c.poco.cn/mypoco/myphoto/20140327/02/6653711520140327022433082.jpg);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048); }
   .tile.tile-512 .tile-inner {
-    color: #f9f6f2;
-    background: #edc850;
+    background-image:url(http://image15-c.poco.cn/mypoco/myphoto/20140327/02/6653711520140327022449041.jpg);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
   .tile.tile-1024 .tile-inner {
-    color: #f9f6f2;
-    background: url(1024.jpg);
+    background-image:url(http://image15-c.poco.cn/mypoco/myphoto/20140327/02/6653711520140327022509075.jpg);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
   .tile.tile-2048 .tile-inner {
-    color: #f9f6f2;
-    background: url(2048.jpg);
+    background-image:url(http://image226-c.poco.cn/mypoco/myphoto/20140327/16/6653711520140327161203012.jpg);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
   .tile.tile-super .tile-inner {
-    color: #f9f6f2;
-    background: #3c3a32;
-    font-size: 30px; }
+    background:url(http://image226-c.poco.cn/mypoco/myphoto/20140327/20/6653711520140327201350026.jpg);
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
     @media screen and (max-width: 520px) {
       .tile.tile-super .tile-inner {
         font-size: 10px; } }
@@ -513,7 +516,7 @@ hr {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-    background: #bbada0;
+    background: #A0ADBA;
     border-radius: 6px;
     width: 280px;
     height: 280px;
@@ -547,11 +550,11 @@ hr {
         margin-top: 59px; }
       .game-container .game-message a {
         display: inline-block;
-        background: #8f7a66;
+        background: #151F42;
         border-radius: 3px;
         padding: 0 20px;
         text-decoration: none;
-        color: #f9f6f2;
+        color: #B1B5CC;
         height: 40px;
         line-height: 42px;
         margin-left: 9px; }
@@ -563,7 +566,7 @@ hr {
         margin-left: 10px; }
       .game-container .game-message.game-won {
         background: rgba(237, 194, 46, 0.5);
-        color: #f9f6f2; }
+        color: #B1B5CC; }
         .game-container .game-message.game-won a.keep-playing-button {
           display: inline-block; }
       .game-container .game-message.game-won, .game-container .game-message.game-over {
@@ -692,11 +695,11 @@ hr {
   color: inherit;
   cursor: pointer;
   display: inline-block;
-  background: #8f7a66;
+  background: #001F5C;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #f9f6f2;
+  color: #B1B5CC;
   height: 40px;
   line-height: 42px; }
   .pp-donate button img {
@@ -707,11 +710,11 @@ hr {
   position: relative;
   margin-left: 10px;
   display: inline-block;
-  background: #8f7a66;
+  background: #001F5C;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #f9f6f2;
+  color: #B1B5CC;
   height: 40px;
   line-height: 42px;
   cursor: pointer; }
@@ -719,7 +722,7 @@ hr {
     vertical-align: -4px;
     margin-right: 8px; }
   .btc-donate a {
-    color: #f9f6f2;
+    color: #B1B5CC;
     text-decoration: none;
     font-weight: normal; }
   .btc-donate .address {
@@ -740,7 +743,7 @@ hr {
     transition-property: top, opacity; }
     .btc-donate .address:after {
       position: absolute;
-      border-top: 10px solid #bbada0;
+      border-top: 10px solid #A0ADBA;
       border-right: 7px solid transparent;
       border-left: 7px solid transparent;
       content: "";
@@ -748,7 +751,7 @@ hr {
       left: 50%;
       margin-left: -7px; }
     .btc-donate .address code {
-      background-color: #bbada0;
+      background-color: #A0ADBA;
       padding: 10px 15px;
       width: 100%;
       border-radius: 3px;
