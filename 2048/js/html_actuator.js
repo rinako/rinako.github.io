@@ -1,4 +1,4 @@
-﻿function HTMLActuator() {
+function HTMLActuator() {
   this.tileContainer    = document.querySelector(".tile-container");
   this.scoreContainer   = document.querySelector(".score-container");
   this.bestContainer    = document.querySelector(".best-container");
@@ -52,7 +52,7 @@ HTMLActuator.prototype.clearContainer = function (container) {
 };
 
 HTMLActuator.prototype.addTile = function (tile) {
-  var text = " 商周秦汉唐宋元明清　　";
+  var text = "            ";
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
@@ -132,23 +132,24 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 };
 
 HTMLActuator.prototype.message = function (won) {
-  var mytxt=new Array(9);
-  mytxt[0]="连秦始皇都见不到了T.T";
-  mytxt[1]="都是赵高害得我！";
-  mytxt[2]="曹贼你还我大汉江山！";
-  mytxt[3]="安史之乱亡我大唐……";
-  mytxt[4]="元人铁蹄果然厉害！";
-  mytxt[5]="还是朱元璋厉害……";
-  mytxt[6]="天地会的弟兄们，反清复明啊！";
-  mytxt[7]="连辛亥革命的黎明都没等到……";
-  mytxt[8]="看不到天朝的太阳了 = =";
+  var mytxt=new Array(10);
+  mytxt[0]="長い道だが、負けるな！";
+  mytxt[1]="油断しちゃダメだぞ！";
+  mytxt[2]="通り魔になっても悪くないですよ";
+  mytxt[3]="話なんざならねぇな";
+  mytxt[4]="お前、そんな程度？";
+  mytxt[5]="マスターはお先！あれ？";
+  mytxt[6]="ボク　ヲ　コワシテ";
+  mytxt[7]="大丈夫だ、問題ない！";
+  mytxt[8]="いいよ、俺だって蒼葉だ";
+  mytxt[9]="言った通り、運命との賭けに敗れることだ。";
 
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "中华人民共和国万岁！" : mytxt[text3(maxscore)-2];
+  var message = won ? "ようこそ！日本最大級、最高級の愛と夢と癒しの娯楽施設、プラチナ・ジェイルへ！" : mytxt[text3(maxscore)-2];
 
-  if (typeof ga !== "undefined") {
+  if (typeof ga !== " ") {
     ga("send", "event", "game", "end", type, this.score);
   }
 
@@ -170,13 +171,13 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "oprilzeng");
-  tweet.setAttribute("data-url", "http://oprilzeng.github.io/2048");
-  tweet.setAttribute("data-counturl", "http://oprilzeng.github.io/2048/");
+  tweet.setAttribute("data-via", "rinako");
+  tweet.setAttribute("data-url", "http://rinako.github.io/DMMd2048");
+  tweet.setAttribute("data-counturl", "http://rinako.github.io/DMMd2048/");
   tweet.textContent = "Tweet";
 
-  var text = "I scored " + this.score + " points at PRC2048, a game where you " +
-             "join numbers to score high! #PRC2048";
+  var text = "I scored " + this.score + " points at DMMd2048, a game where you " +
+             "join numbers to score high! #DMMd2048";
   tweet.setAttribute("data-text", text);
 
   return tweet;
