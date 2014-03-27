@@ -172,8 +172,8 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
   tweet.setAttribute("data-via", "rinako");
-  tweet.setAttribute("data-url", "http://rinako.github.io/DMMd2048");
-  tweet.setAttribute("data-counturl", "http://rinako.github.io/DMMd2048/");
+  tweet.setAttribute("data-url", "http://rinako.github.io/2048");
+  tweet.setAttribute("data-counturl", "http://rinako.github.io/2048/");
   tweet.textContent = "Tweet";
 
   var text = "I scored " + this.score + " points at DMMd2048, a game where you " +
