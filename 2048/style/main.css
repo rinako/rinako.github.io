@@ -364,9 +364,8 @@ hr {
     background-image:url(http://image226-c.poco.cn/mypoco/myphoto/20140327/16/6653711520140327161203012.jpg);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
   .tile.tile-super .tile-inner {
-    color: #f9f6f2;
-    background: #3c3a32;
-    font-size: 30px; }
+    background:url(http://image226-c.poco.cn/mypoco/myphoto/20140327/20/6653711520140327201350026.jpg);
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
     @media screen and (max-width: 520px) {
       .tile.tile-super .tile-inner {
         font-size: 10px; } }
