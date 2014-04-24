@@ -1,4 +1,4 @@
-﻿function HTMLActuator() {
+function HTMLActuator() {
   this.tileContainer    = document.querySelector(".tile-container");
   this.scoreContainer   = document.querySelector(".score-container");
   this.bestContainer    = document.querySelector(".best-container");
@@ -52,25 +52,7 @@ HTMLActuator.prototype.clearContainer = function (container) {
 };
 
 HTMLActuator.prototype.addTile = function (tile) {
-  var text=new Array(18);
-  text[0] = " ";
-  text[1] = "夏";
-  text[2] = "商";
-  text[3] = "周";
-  text[4] = "秦";
-  text[5] = "汉";
-  text[6] = "三国";
-  text[7] = "晋";
-  text[8] = "南北朝";
-  text[9] = "隋";
-  text[10] = "唐";
-  text[11] = "五代<br>十国";
-  text[12] = "宋";
-  text[13] = "元";
-  text[14] = "明";
-  text[15] = "清";
-  text[16] = " ";
-  text[17] = " ";
+  var text = "            ";
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
@@ -82,12 +64,12 @@ HTMLActuator.prototype.addTile = function (tile) {
   // We can't use classlist because it somehow glitches when replacing classes
   var classes = ["tile", "tile-" + tile.value, positionClass];
 
-  if (tile.value > 131072) classes.push("tile-super");
+  if (tile.value > 2048) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
 
   inner.classList.add("tile-inner");
-  inner.innerHTML = text[text2(tile.value)];
+  inner.textContent = text[text2(tile.value)];
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
@@ -150,26 +132,23 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 };
 
 HTMLActuator.prototype.message = function (won) {
-  var mytxt=new Array(14);
-  mytxt[0]="连秦始皇都见不到了T.T";
-  mytxt[1]="曹贼你还我大汉江山！";
-  mytxt[2]="都是赵高害得我！";
-  mytxt[3]="司马老儿果然奸诈！";
-  mytxt[4]="江山难坐啊！";
-  mytxt[5]="明朝天下一统，可惜看不到了！";
-  mytxt[6]="毁在杨广手里了……";
-  mytxt[7]="安史之乱亡我大唐……";
-  mytxt[8]="赵匡胤黄袍加身，兵不血刃啊！";
-  mytxt[9]="元人铁蹄果然厉害！";
-  mytxt[10]="还是朱元璋厉害……";
-  mytxt[11]="天地会的弟兄们，反清复明啊！";
-  mytxt[12]="连辛亥革命的黎明都没等到……";
-  mytxt[13]="看不到天朝的太阳了 = =";
+  var mytxt=new Array(10);
+  mytxt[0]="Oh,my foolish Brother!";
+  mytxt[1]="But I always love YOU!...What?!";
+  mytxt[2]="A woman?!Nooo!!!";
+  mytxt[3]="Be the KING and own YOU!";
+  mytxt[4]="Not that way,Brother!";
+  mytxt[5]="Then tell me which way?";
+  mytxt[6]="How about this way?";
+  mytxt[7]="No.";
+  mytxt[8]="This way...??";
+  mytxt[9]="Noooooo,Loki!!!";
+  mytxt[10]="Goodbye,my Dearest Brother!";
 
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "中华人民共和国万岁！" : mytxt[text3(maxscore)-3];
+  var message = won ? "Don't worry,Brother,I am back." : mytxt[text3(maxscore)-2];
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
@@ -193,13 +172,13 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "oprilzeng");
-  tweet.setAttribute("data-url", "http://oprilzeng.github.io/2048/full");
-  tweet.setAttribute("data-counturl", "http://oprilzeng.github.io/2048/full/");
+  tweet.setAttribute("data-via", "rinako");
+  tweet.setAttribute("data-url", "http://rinako.github.io/2048");
+  tweet.setAttribute("data-counturl", "http://rinako.github.io/2048/");
   tweet.textContent = "Tweet";
 
-  var text = "I scored " + this.score + " points at PRC2048-Full edition, a game where you " +
-             "join numbers to score high! #PRC2048";
+  var text = "I scored " + this.score + " points at DMMd2048, a game where you " +
+             "join numbers to score high! #DMMd2048";
   tweet.setAttribute("data-text", text);
 
   return tweet;
