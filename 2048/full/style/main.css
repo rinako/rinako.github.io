@@ -323,41 +323,47 @@ hr {
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
     background: #EEE4DA;
+	background-image: url(https://g5xpgw.bay.livefilestore.com/y2pJ39XLLWqn4b9fWhAnAvfH2akiDot1G3iNt9yp9Erq2x1FX12BKskN4YuRmaJXgSqgLEZBkpvNdNXVpXzBVC7bCOGjinUJUM1DFOfUeMIIuM/0002.gif?psid=1);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
     background: #ede0c8;
+	background-image: url(https://g5xpgw.by3301.livefilestore.com/y2pvv6ipng_5LdLH66hAnOCX0tbhHi-l0I-yh2Uy3xmFsRdPJpp9AKWpM7x2wmGAymup4cnR6tbxHRCak2AM7lQHNpu4UZVqhKSPoYgtVaG584/0004.gif?psid=1);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
     color: #f9f6f2;
-    background: #f2b179; }
+	background-image: url(https://g5xpgw.by3301.livefilestore.com/y2pqUH_EIrBibrM39a0kncfDihNUh3sdX21FB1K0rtXvd8RT13VfxMJHuXCPD_Nq9rXcIuyw46u5J35F73Z7GIAvu2g-wMSUUVCN2AI_wUZCJo/0008.gif?psid=1);
+    }
   .tile.tile-16 .tile-inner {
     color: #f9f6f2;
-    background: #f59563; }
+	background-image: url(https://g5xpgw.by3302.livefilestore.com/y2pRsSdDQ6_7_92upPZ5rn8-rtgQYkpmlTvQO2A-aNw868-YwCs30055RodwoMQrtQjsQxbU3tZuXjIRZfZEqK2u-vm5srAqIHdhsYh8QgQmPw/0016.gif?psid=1);
+    }
   .tile.tile-32 .tile-inner {
     color: #f9f6f2;
-    background: #f67c5f; }
+	background-image: url(https://g5xpgw.by3302.livefilestore.com/y2pC1F_eiDY_EVGt0GHhPiP9gEx6UUA4nuy_cG-6tOcgZI9gcn1VQW-bq_Oid4HrfKFEO_5Xmq_A5c3cnfQO8_WMHuevhd6ncZaCPhO5HfRzq0/0032.gif?psid=1);
+    }
   .tile.tile-64 .tile-inner {
     color: #f9f6f2;
-    background: #f65e3b; }
+	background-image: url(https://g5xpgw.by3302.livefilestore.com/y2pG3Bo3ssMZPd-LugF2ocAO9jX6qJzkQFUPd3HhseMIzUOQYR89Z7MuqftArjR-QilWaWg81DRSpB_ZGDeGPEt6KxP99oJO1UL5hiQgIBxEWo/0064.gif?psid=1);
+    }
   .tile.tile-128 .tile-inner {
     color: #f9f6f2;
-    background: #edcf72;
+	background-image: url(https://g5xpgw.bay.livefilestore.com/y2picgKXp7zuB9LKkB6iCsoEdfEXpLDIq89n-vCEHSxsCDAPieQ2348bO1ZVlCEa0wDefczjY3bMNZil_27wkbIqMwI8rzbUzfhqLgtt33RTd8/0128.gif?psid=1);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286); }
   .tile.tile-256 .tile-inner {
     color: #f9f6f2;
-    background: #edcc61;
+    background-image: url(https://g5xpgw.by3302.livefilestore.com/y2pmCuEu9RnFrJqQRh-VV9aBvk6C4CxzRghFhs5EMYlCXrDbujGvXwf_L7DE0TpYfjFVGj3Wl1cy23AKIm6p0kFyro2TZnr65h08x_Y1PdKlps/0256.gif?psid=1);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048); }
   .tile.tile-512 .tile-inner {
     color: #f9f6f2;
-    background: #edc850;
+    background-image: url(https://g5xpgw.by3301.livefilestore.com/y2pxn7zifxN_0IGLcNMNkMYN6AN5ywYgQUnTErAvsNZNN1hQxvOrZk6EHXIBWrNGGF_Br-sr4pbLuq1XwdMnLWwaE-ITGclJ1THAxI1V-I2skQ/0512.gif?psid=1);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
   .tile.tile-1024 .tile-inner {
     color: #f9f6f2;
-    background: url(1024.jpg);
+    background-image: url(https://g5xpgw.bay.livefilestore.com/y2p30xwWZfTX0pPcpnWmUzcwAOp4C4odGD5Tfe81yMfA_S36vgrT4FgylYh8QE-18mwmgx7YHr0zQ4Csi06oUt9-opF0paUuqr6mqtTZ7l_duQ/1024.gif?psid=1);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
   .tile.tile-2048 .tile-inner {
     color: #f9f6f2;
-    background: url(2048.jpg);
+    background-image: url(https://g5xpgw.bay.livefilestore.com/y2plnE9OeWfG2jiNZDJPPkftxYvoMn9miQZQ40bpLxrzbefM8rrKfsAXAzHoHxmsqt1aoq0zjj1FNUFPCNQAUV7pNa3oeQGWzJElv22sTrNq7w/2048.gif?psid=1);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
