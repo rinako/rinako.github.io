@@ -186,6 +186,7 @@ hr {
     .game-container .game-message .lower {
 	display: block;
 	margin-top: 59px;
+	color: #444444;
 }
     .game-container .game-message a {
       display: inline-block;
