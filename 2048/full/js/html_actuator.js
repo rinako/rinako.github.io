@@ -133,17 +133,16 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var mytxt=new Array(10);
-  mytxt[0]="Oh,my foolish Brother!";
-  mytxt[1]="But I always love YOU!...What?!";
-  mytxt[2]="A woman?!Nooo!!!";
-  mytxt[3]="Be the KING and own YOU!";
-  mytxt[4]="Not that way,Brother!";
-  mytxt[5]="Then tell me which way?";
-  mytxt[6]="How about this way?";
-  mytxt[7]="No.";
-  mytxt[8]="This way...??";
-  mytxt[9]="Noooooo,Loki!!!";
-  mytxt[10]="Goodbye,my Dearest Brother!";
+  mytxt[0]="But I always love YOU!...What?!";
+  mytxt[1]="A woman?!Nooo!!!";
+  mytxt[2]="Be the KING and own YOU!";
+  mytxt[3]="Not that way,Brother!";
+  mytxt[4]="Then tell me which way?";
+  mytxt[5]="How about this way?";
+  mytxt[6]="No.";
+  mytxt[7]="This way...??";
+  mytxt[8]="Noooooo,Loki!!!";
+  mytxt[9]="Goodbye,my Dearest Brother!";
 
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
