@@ -141,7 +141,7 @@ HTMLActuator.prototype.message = function (won) {
   mytxt[5]="How about this way?";
   mytxt[6]="No.";
   mytxt[7]="This way...??";
-  mytxt[8]="Noooooo,Loki!!!";
+  mytxt[8]="Noooooooooo,Loki!!!";
   mytxt[9]="Goodbye,my Dearest Brother!";
 
 
