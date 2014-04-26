@@ -2,28 +2,32 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	background-image:url(https://g5xpgw.by3301.livefilestore.com/y2pHj9qcLz52HW5xBA2ahMzYqY10MnNrZDz2kTw6Xln2C1yhcwnRXeZzvtxrzjAqCHHr0cF_gK6eh0-bOhs3H0F0lfbXbeiOzV5VNlFXbra1Sk/bg.jpg?psid=1);
-	color: #887777;
+	color: #14192C;
 	font-family: "Clear Sans", "Helvetica Neue", "Microsoft Yahei", Arial, sans-serif;
 	font-size: 18px;
 	background-color: #faf8ef;
-	background-position: center;
+	background-image:url(https://fpxb9q.bay.livefilestore.com/y2p6nmK08lUByTxXI_K5k2HoGa5G6Tx6dwklIdSBApS_-Vd0iGr6x0BKSZeo00SJ69r6iqaQM2qFRv5Z3_9ZxW185EBCMZhLmImE9ZY2lSWT60/bg.gif);
 }
 
 body {
   margin: 80px 0; }
 
 .heading:after {
-  content: "";
-  display: block;
-  clear: both; }
+	content: "";
+	display: block;
+	clear: none;
+	background-position: center;
+}
 
 h1.title {
-  font-size: 80px;
-  font-weight: bold;
-  margin: 0;
-  display: block;
-  float: left; }
+	display:block;
+	font-size: 80px;
+	font-weight: bold;
+	margin: 0;
+	float: left;
+	border-top-style: 10px;
+	border-bottom-style: 10px;
+}
 
 @-webkit-keyframes move-up {
   0% {
@@ -53,32 +57,35 @@ h1.title {
     opacity: 0; } }
 
 .scores-container {
-  float: right;
-  text-align: right; }
+	float: right;
+	text-align: right;
+}
 
 .score-container, .best-container {
-  position: relative;
-  display: inline-block;
-  background: #444444;
-  padding: 15px 25px;
-  font-size: 25px;
-  height: 25px;
-  line-height: 47px;
-  font-weight: bold;
-  border-radius: 3px;
-  color: white;
-  margin-top: 8px;
-  text-align: center; }
+	position: relative;
+	display: inline-block;
+	padding: 15px 25px;
+	font-size: 25px;
+	height: 25px;
+	line-height: 47px;
+	font-weight: bold;
+	border-radius: 3px;
+	color: white;
+	margin-top: 8px;
+	text-align: center;
+	background-color: #32406E;
+}
   .score-container:after, .best-container:after {
-    position: absolute;
-    width: 100%;
-    top: 10px;
-    left: 0;
-    text-transform: uppercase;
-    font-size: 13px;
-    line-height: 13px;
-    text-align: center;
-    color: #999999; }
+	position: absolute;
+	width: 100%;
+	top: 10px;
+	left: 0;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 13px;
+	text-align: center;
+	color: #9DA3BF;
+}
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -107,7 +114,7 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #eedddd;
+  color: #14192C;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -117,7 +124,7 @@ strong.important {
 
 hr {
   border: none;
-  border-bottom: 1px solid #d8d4d0;
+  border-bottom: 1px solid #4F5C8C;
   margin-top: 20px;
   margin-bottom: 30px; }
 
@@ -147,20 +154,22 @@ hr {
     opacity: 1; } }
 
 .game-container {
-  margin-top: 40px;
-  position: relative;
-  padding: 15px;
-  cursor: default;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  background: #444444;
-  border-radius: 6px;
-  width: 500px;
-  height: 500px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+	margin-top: 40px;
+	position: relative;
+	padding: 15px;
+	cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+	border-radius: 6px;
+	width: 500px;
+	height: 500px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #32406E;
+	background-position: center;
+}
   .game-container .game-message {
     display: none;
     position: absolute;
@@ -184,16 +193,15 @@ hr {
       line-height: 40px;
       margin-top: 222px; }
     .game-container .game-message .lower {
-	display: block;
-	margin-top: 59px;
-}
+      display: block;
+      margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #7C995C;
+      background: #001F5C;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
-      color: #f9f6f2;
+      color: #B1B5CC;
       height: 40px;
       line-height: 42px;
       margin-left: 9px; }
@@ -205,7 +213,7 @@ hr {
       margin-left: 10px; }
     .game-container .game-message.game-won {
       background: rgba(237, 194, 46, 0.5);
-      color: #f9f6f2; }
+      color: #B1B5CC; }
       .game-container .game-message.game-won a.keep-playing-button {
         display: inline-block; }
     .game-container .game-message.game-won, .game-container .game-message.game-over {
@@ -317,59 +325,47 @@ hr {
   transition-property: transform; }
   .tile .tile-inner {
     border-radius: 3px;
-    background: #EEE4DA;
+    background: #9DA3BF;
     text-align: center;
     font-weight: bold;
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    background: #EEE4DA;
-	background-image: url(https://g5xpgw.bay.livefilestore.com/y2pJ39XLLWqn4b9fWhAnAvfH2akiDot1G3iNt9yp9Erq2x1FX12BKskN4YuRmaJXgSqgLEZBkpvNdNXVpXzBVC7bCOGjinUJUM1DFOfUeMIIuM/0002.gif?psid=1);
+    background-image:url(https://djxpgw.bay.livefilestore.com/y2p5wzyXjuEVHBg6L79BCOV9XanK0WlEKu8znxHcKUb7VcVckhwwhbKH8LgKVyyCWEVdah_UjP_8Th8aNaTRCKrCNRdZuvtV1ZuwhlIVMe2DFQ/0002.gif);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
-    background: #ede0c8;
-	background-image: url(https://g5xpgw.by3301.livefilestore.com/y2pvv6ipng_5LdLH66hAnOCX0tbhHi-l0I-yh2Uy3xmFsRdPJpp9AKWpM7x2wmGAymup4cnR6tbxHRCak2AM7lQHNpu4UZVqhKSPoYgtVaG584/0004.gif?psid=1);
+    background-image:url(https://fjv2ag.by3301.livefilestore.com/y2p2pg_KMbjtM3s-4YyyjebajwAMRG8zWmQtybWEBZRgSyDbLzh-GflHBEEO_tc0bu7PX6mgUw-mbZZglvryKCoteGEFdewmAGGqdJnblCL5Uw/0004.gif);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
-    color: #f9f6f2;
-	background-image: url(https://g5xpgw.by3301.livefilestore.com/y2pqUH_EIrBibrM39a0kncfDihNUh3sdX21FB1K0rtXvd8RT13VfxMJHuXCPD_Nq9rXcIuyw46u5J35F73Z7GIAvu2g-wMSUUVCN2AI_wUZCJo/0008.gif?psid=1);
-    }
+    background-image:url(https://dzxpgw.by3302.livefilestore.com/y2pI-ZkDS5VDtWs99PgYiv9U3hbtSo1UfERSm1zHs7OqY1cseJxmi-duZd4n2Pi0gA3pYjcdynM8aPwvGiOWAPa0sHtXlghgDD3l_hA2rgqyqw/0008.gif);
+	 }
   .tile.tile-16 .tile-inner {
-    color: #f9f6f2;
-	background-image: url(https://g5xpgw.by3302.livefilestore.com/y2pRsSdDQ6_7_92upPZ5rn8-rtgQYkpmlTvQO2A-aNw868-YwCs30055RodwoMQrtQjsQxbU3tZuXjIRZfZEqK2u-vm5srAqIHdhsYh8QgQmPw/0016.gif?psid=1);
-    }
+    background-image:url(https://fzv2ag.by3301.livefilestore.com/y2pg-lEP1_MzLY_KKweKH5JzvcBVHUMhPgWdKhqY_qHOhySkWBrIM3diNImEx1EIwd2YMSl1KNBzch-E6WCbiaDH2v_dQp2ukesGZS5yQ0KrKI/0016.gif);
+	}
   .tile.tile-32 .tile-inner {
-    color: #f9f6f2;
-	background-image: url(https://g5xpgw.by3302.livefilestore.com/y2pC1F_eiDY_EVGt0GHhPiP9gEx6UUA4nuy_cG-6tOcgZI9gcn1VQW-bq_Oid4HrfKFEO_5Xmq_A5c3cnfQO8_WMHuevhd6ncZaCPhO5HfRzq0/0032.gif?psid=1);
-    }
+    background-image:url(https://fpv2ag.by3301.livefilestore.com/y2pI2ZvxcBi0B6mFxIXvqM-uppUkvplrrXRlUrXi455uA-x7FkEVYAGZEEc3sBjhIQWFxSpoHGNOw_3WP8AJ1teaRKYFH-WWryzFaVE5EYRKl4/0032.gif);
+	}
   .tile.tile-64 .tile-inner {
-    color: #f9f6f2;
-	background-image: url(https://g5xpgw.by3302.livefilestore.com/y2pG3Bo3ssMZPd-LugF2ocAO9jX6qJzkQFUPd3HhseMIzUOQYR89Z7MuqftArjR-QilWaWg81DRSpB_ZGDeGPEt6KxP99oJO1UL5hiQgIBxEWo/0064.gif?psid=1);
-    }
+    background-image:url(https://gpv2ag.bay.livefilestore.com/y2pxM9HrtEwSKBsidpANEVG8TLRwldjbi6iz0k3xuW8UsQdDLTLZa_wvGBteM5ak1F1vjozSPr3O6d1rHX_XX3LD6uThTh_lku0i4xT3IcIyvQ/0064.gif);
+	}
   .tile.tile-128 .tile-inner {
-    color: #f9f6f2;
-	background-image: url(https://g5xpgw.bay.livefilestore.com/y2picgKXp7zuB9LKkB6iCsoEdfEXpLDIq89n-vCEHSxsCDAPieQ2348bO1ZVlCEa0wDefczjY3bMNZil_27wkbIqMwI8rzbUzfhqLgtt33RTd8/0128.gif?psid=1);
+    background-image:url(https://f5v2ag.by3301.livefilestore.com/y2psr-YbC0Slg5GTWI1C9cS1Y_dKER0zoMSCP_NlO7OQzaaaezL_6ZWzYxrbYpZo-ofRlLjk9UlVXrV_GpIjCAN5RRxos_fiBztZj3HF23R6Tk/0128.gif);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286); }
   .tile.tile-256 .tile-inner {
-    color: #f9f6f2;
-    background-image: url(https://g5xpgw.by3302.livefilestore.com/y2pmCuEu9RnFrJqQRh-VV9aBvk6C4CxzRghFhs5EMYlCXrDbujGvXwf_L7DE0TpYfjFVGj3Wl1cy23AKIm6p0kFyro2TZnr65h08x_Y1PdKlps/0256.gif?psid=1);
+    background-image:url(https://gjv2ag.by3302.livefilestore.com/y2pM4coiPr7CjxLvkraSb0R4LMpUYAblXj3qptvDFOIECq5ilJFTaoeKzgpvo0EqXOwwMVAlNg241Kdhlqimknvo7cEDS7eeJlI6FxB1tu3H6I/0256.gif);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048); }
   .tile.tile-512 .tile-inner {
-    color: #f9f6f2;
-    background-image: url(https://g5xpgw.by3301.livefilestore.com/y2pxn7zifxN_0IGLcNMNkMYN6AN5ywYgQUnTErAvsNZNN1hQxvOrZk6EHXIBWrNGGF_Br-sr4pbLuq1XwdMnLWwaE-ITGclJ1THAxI1V-I2skQ/0512.gif?psid=1);
+    background-image:url(https://gzv2ag.by3302.livefilestore.com/y2pl__EisQuPLFMMrlfnZQJkkHHQ8Pd32BVLCLG86fk57IRWnmTmXN0SK-v9xyEcnFNfBOQMHsEDjgLsRw3mCZgO6YxySduFtPpXcA3CTCGpPA/0512.gif);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
   .tile.tile-1024 .tile-inner {
-    color: #f9f6f2;
-    background-image: url(https://g5xpgw.bay.livefilestore.com/y2p30xwWZfTX0pPcpnWmUzcwAOp4C4odGD5Tfe81yMfA_S36vgrT4FgylYh8QE-18mwmgx7YHr0zQ4Csi06oUt9-opF0paUuqr6mqtTZ7l_duQ/1024.gif?psid=1);
+    background-image:url(https://g5v2ag.by3301.livefilestore.com/y2pLpRZhz_jPSG5Nd72ToL1j_clxAXBLFctyZ0C5xqYzE_WzjOvTPrQr39iR3DI3DKpZSjQLE1Z1ao9CsT_bmKDjxt4b4vSyfyZOMZg6-P1nF0/1024.gif);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
   .tile.tile-2048 .tile-inner {
-    color: #f9f6f2;
-    background-image: url(https://g5xpgw.bay.livefilestore.com/y2plnE9OeWfG2jiNZDJPPkftxYvoMn9miQZQ40bpLxrzbefM8rrKfsAXAzHoHxmsqt1aoq0zjj1FNUFPCNQAUV7pNa3oeQGWzJElv22sTrNq7w/2048.gif?psid=1);
+    background-image:url(https://djv2ag.bay.livefilestore.com/y2p4qwFaPwBa6UJjqhd0WMyzvnYk-Du0fJG208QuG0MSUBoJFzzWwsCU4e4CHCGCpIKnKUMktK05TuMcRr9xb3aUh6bYCbbQwPVYJzrlO-Wdik/2048.gif);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
   .tile.tile-super .tile-inner {
-    color: #f9f6f2;
-    background: #3c3a32;
-    font-size: 30px; }
+    background:url(https://dzv2ag.by3301.livefilestore.com/y2pxjmzO5sbyqwBYS8u_Jf52uZKv6gWHe5E8MB12zBa4gkD4-p_AvFj5_yIvuv5kDEvlGtJ-d18C3D0kPVmgBp_i0_za5-iCW75dluM6C8U9Ls/super.gif);
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
     @media screen and (max-width: 520px) {
       .tile.tile-super .tile-inner {
         font-size: 10px; } }
@@ -523,7 +519,7 @@ hr {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-    background: #444444;
+    background: #A0ADBA;
     border-radius: 6px;
     width: 280px;
     height: 280px;
@@ -557,11 +553,11 @@ hr {
         margin-top: 59px; }
       .game-container .game-message a {
         display: inline-block;
-        background: #8E9982;
+        background: #151F42;
         border-radius: 3px;
         padding: 0 20px;
         text-decoration: none;
-        color: #f9f6f2;
+        color: #B1B5CC;
         height: 40px;
         line-height: 42px;
         margin-left: 9px; }
@@ -573,7 +569,7 @@ hr {
         margin-left: 10px; }
       .game-container .game-message.game-won {
         background: rgba(237, 194, 46, 0.5);
-        color: #f9f6f2; }
+        color: #B1B5CC; }
         .game-container .game-message.game-won a.keep-playing-button {
           display: inline-block; }
       .game-container .game-message.game-won, .game-container .game-message.game-over {
@@ -702,11 +698,11 @@ hr {
   color: inherit;
   cursor: pointer;
   display: inline-block;
-  background: #8E9982;
+  background: #001F5C;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #776E65;
+  color: #B1B5CC;
   height: 40px;
   line-height: 42px; }
   .pp-donate button img {
@@ -717,11 +713,11 @@ hr {
   position: relative;
   margin-left: 10px;
   display: inline-block;
-  background: #8E9982;
+  background: #001F5C;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #776E65;
+  color: #B1B5CC;
   height: 40px;
   line-height: 42px;
   cursor: pointer; }
@@ -729,7 +725,7 @@ hr {
     vertical-align: -4px;
     margin-right: 8px; }
   .btc-donate a {
-    color: #776E65;
+    color: #B1B5CC;
     text-decoration: none;
     font-weight: normal; }
   .btc-donate .address {
@@ -750,7 +746,7 @@ hr {
     transition-property: top, opacity; }
     .btc-donate .address:after {
       position: absolute;
-      border-top: 10px solid #bbada0;
+      border-top: 10px solid #A0ADBA;
       border-right: 7px solid transparent;
       border-left: 7px solid transparent;
       content: "";
@@ -758,7 +754,7 @@ hr {
       left: 50%;
       margin-left: -7px; }
     .btc-donate .address code {
-      background-color: #bbada0;
+      background-color: #A0ADBA;
       padding: 10px 15px;
       width: 100%;
       border-radius: 3px;
@@ -782,3 +778,4 @@ hr {
         .btc-donate .address:after {
           left: 50%;
           bottom: 2px; } }
+
