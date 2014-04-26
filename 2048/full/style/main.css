@@ -180,13 +180,13 @@ hr {
     .game-container .game-message p {
       font-size: 40px;
       font-weight: bold;
+	  color: #444444;
       height: 40px;
       line-height: 40px;
       margin-top: 222px; }
     .game-container .game-message .lower {
 	display: block;
 	margin-top: 59px;
-	color: #444444;
 }
     .game-container .game-message a {
       display: inline-block;
