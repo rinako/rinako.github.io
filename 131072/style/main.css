@@ -1,0 +1,561 @@
+@import url(fonts/clear-sans.css);
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #faf8ef;
+  color: #776e65;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+}
+
+body {
+  margin: 80px 0;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.heading:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+h1.title {
+  font-size: 80px;
+  font-weight: bold;
+  margin: 0;
+  display: block;
+  float: left;
+}
+
+/* 分数容器需要相对定位 */
+.scores-container {
+  float: right;
+  text-align: right;
+  position: relative;
+}
+
+.score-container, .best-container {
+  position: relative;
+  display: inline-block;
+  background: #bbada0;
+  padding: 15px 25px;
+  font-size: 18px;
+  height: 25px;
+  line-height: 47px;
+  font-weight: bold;
+  border-radius: 3px;
+  color: white;
+  margin-top: 8px;
+  text-align: center;
+  overflow: visible; /* 确保加分动画不会被裁剪 */
+}
+
+/* 加分动画样式 */
+.score-addition {
+  position: absolute;
+  top: -10px; /* 从分数上方开始 */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #8f7a66;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 1;
+  animation: score-rise 1s ease-out forwards;
+  pointer-events: none; /* 防止干扰点击 */
+  z-index: 10;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+}
+
+/* 加分数字上升动画 */
+@keyframes score-rise {
+  0% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-30px);
+    opacity: 0;
+  }
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 520px) {
+  .score-addition {
+    font-size: 16px;
+  }
+  
+  @keyframes score-rise {
+    0% {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-20px);
+      opacity: 0;
+    }
+  }
+}
+
+.score-container:after, .best-container:after {
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  color: #eee4da;
+}
+
+.score-container:after {
+  content: "SCORE";
+}
+
+.best-container:after {
+  content: "BEST";
+}
+
+.score-container .score-addition {
+  position: absolute;
+  right: 30px;
+  color: red;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: bold;
+  color: rgba(119, 110, 101, 0.9);
+  z-index: 100;
+}
+
+/* 存档控制按钮样式 */
+.save-controls {
+  text-align: center;
+  margin: 15px 0;
+  clear: both; /* 确保在分数容器下方 */
+}
+
+.save-button, .load-button, .reset-button {
+  background: #7f6a56;
+  border: none;
+  border-radius: 3px;
+  color: #f9f6f2;
+  cursor: pointer;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 14px;
+  margin: 0 2px;
+  transition: background 0.3s;
+}
+
+.save-button:hover, .load-button:hover, .reset-button:hover {
+  background: #bbada0;
+}
+
+.save-hint {
+  font-size: 14px;
+  color: #bbada0;
+  margin-top: 8px;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 520px) {
+  .save-controls {
+    margin: 10px 0;
+  }
+  
+  .save-button, .load-button, .reset-button {
+    font-size: 16px;
+    padding: 8px 15px;
+    margin: 0 1px;
+  }
+  
+  .save-hint {
+    font-size: 12px;
+  }
+}
+
+.game-container {
+  margin-top: 40px;
+  position: relative;
+  padding: 15px;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  background: #bbada0;
+  border-radius: 6px;
+  width: 500px;
+  height: 500px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.game-message {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(238, 228, 218, 0.73);
+  z-index: 100;
+  text-align: center;
+  animation: fade-in 800ms ease 1200ms;
+  animation-fill-mode: both;
+}
+
+.game-message p {
+  font-size: 30px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 222px;
+}
+
+.game-message .lower {
+  display: block;
+  margin-top: 59px;
+}
+
+.game-message a {
+  display: inline-block;
+  background: #8f7a66;
+  border-radius: 3px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 40px;
+  line-height: 42px;
+  margin-left: 9px;
+}
+
+.game-message.game-won {
+  background: rgba(237, 194, 46, 0.5);
+  color: #f9f6f2;
+}
+
+.game-message.game-won, .game-message.game-over {
+  display: block;
+}
+
+.grid-container {
+  position: absolute;
+  z-index: 1;
+}
+
+.grid-row {
+  margin-bottom: 15px;
+}
+
+.grid-row:last-child {
+  margin-bottom: 0;
+}
+
+.grid-row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid-cell {
+  width: 106.25px;
+  height: 106.25px;
+  margin-right: 15px;
+  float: left;
+  border-radius: 3px;
+  background: rgba(238, 228, 218, 0.35);
+}
+
+.grid-cell:last-child {
+  margin-right: 0;
+}
+
+.tile-container {
+  position: absolute;
+  z-index: 2;
+}
+
+.tile, .tile .tile-inner {
+  width: 107px;
+  height: 107px;
+  line-height: 107px;
+}
+
+.tile {
+  position: absolute;
+  -webkit-transition: 100ms ease-in-out;
+  -moz-transition: 100ms ease-in-out;
+  transition: 100ms ease-in-out;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+}
+
+.tile .tile-inner {
+  border-radius: 3px;
+  background: #eee4da;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+  font-size: 35px;
+  color: #776e65; /* 确保有颜色 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 不同数字的颜色 - 更自然的梯度 */
+.tile-2 .tile-inner { 
+  background: #eee4da; 
+  color: #776e65; 
+  font-size: 35px;
+}
+.tile-4 .tile-inner { 
+  background: #ede0c8; 
+  color: #776e65; 
+  font-size: 35px;
+}
+.tile-8 .tile-inner { 
+  background: #f2b179; 
+  color: #f9f6f2; 
+  font-size: 35px;
+}
+.tile-16 .tile-inner { 
+  background: #f59563; 
+  color: #f9f6f2; 
+  font-size: 35px;
+}
+.tile-32 .tile-inner { 
+  background: #f67c5f; 
+  color: #f9f6f2; 
+  font-size: 35px;
+}
+.tile-64 .tile-inner { 
+  background: #f65e3b; 
+  color: #f9f6f2; 
+  font-size: 35px;
+}
+
+/* 128-2048: 金色系，带有逐渐增强的光晕效果 */
+.tile-128 .tile-inner { 
+  background: #edcf72; 
+  color: #f9f6f2; 
+  font-size: 35px;
+  box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.3), 
+              inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+.tile-256 .tile-inner { 
+  background: #edcc61; 
+  color: #f9f6f2; 
+  font-size: 35px;
+  box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.4), 
+              inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+.tile-512 .tile-inner { 
+  background: #edc850; 
+  color: #f9f6f2; 
+  font-size: 35px;
+  box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.5), 
+              inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+.tile-1024 .tile-inner { 
+  background: #edc53f; 
+  color: #f9f6f2; 
+  font-size: 32px;
+  box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.6), 
+              inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+.tile-2048 .tile-inner { 
+  background: #edc22e; 
+  color: #f9f6f2; 
+  font-size: 32px;
+  box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.7), 
+              inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+}
+
+/* 4096-131072: 蓝色系，带有更强烈的光晕效果 */
+.tile-4096 .tile-inner { 
+  background: #76d7c4; 
+  color: #f9f6f2; 
+  font-size: 32px;
+  box-shadow: 0 0 30px 10px rgba(118, 215, 196, 0.5), 
+              inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+.tile-8192 .tile-inner { 
+  background: #5dade2; 
+  color: #f9f6f2; 
+  font-size: 32px;
+  box-shadow: 0 0 30px 10px rgba(93, 173, 226, 0.6), 
+              inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+.tile-16384 .tile-inner { 
+  background: #5499c7; 
+  color: #f9f6f2; 
+  font-size: 32px;
+  box-shadow: 0 0 30px 10px rgba(84, 153, 199, 0.7), 
+              inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+}
+.tile-32768 .tile-inner { 
+  background: #2980b9; 
+  color: #f9f6f2; 
+  font-size: 32px;
+  box-shadow: 0 0 30px 10px rgba(41, 128, 185, 0.8), 
+              inset 0 0 0 1px rgba(255, 255, 255, 0.45);
+}
+.tile-65536 .tile-inner { 
+  background: #2471a3; 
+  color: #f9f6f2; 
+  font-size: 32px;
+  box-shadow: 0 0 30px 10px rgba(36, 113, 163, 0.9), 
+              inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.tile-131072 .tile-inner { 
+  background: #1b4f72; 
+  color: #f9f6f2; 
+  font-size: 28px;
+  box-shadow: 0 0 30px 10px rgba(27, 79, 114, 1), 
+              inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  /* 为131072添加特殊效果 */
+  animation: pulse-glow 2s infinite alternate;
+}
+
+/* 131072的特殊脉动光晕效果 */
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 30px 10px rgba(27, 79, 114, 0.8);
+              inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 40px 15px rgba(27, 79, 114, 1);
+              inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* 超级方块（超过131072） */
+.tile-super .tile-inner { 
+  background: #3c3a32; 
+  color: #f9f6f2; 
+  font-size: 32px;
+  box-shadow: 0 0 30px 10px rgba(60, 58, 50, 1), 
+              inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+  animation: super-glow 2s infinite alternate;
+}
+
+/* 超级方块脉动光晕动画 */
+@keyframes super-glow {
+  0% {
+    box-shadow: 0 0 30px 10px rgba(60, 58, 50, 0.9), 
+                inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 40px 15px rgba(60, 58, 50, 1), 
+                inset 0 0 0 1px rgba(255, 255, 255, 0.9);
+  }
+}
+
+/* 完整的位置类定义 */
+.tile.tile-position-1-1 { transform: translate(0px, 0px); }
+.tile.tile-position-1-2 { transform: translate(0px, 121px); }
+.tile.tile-position-1-3 { transform: translate(0px, 242px); }
+.tile.tile-position-1-4 { transform: translate(0px, 363px); }
+.tile.tile-position-2-1 { transform: translate(121px, 0px); }
+.tile.tile-position-2-2 { transform: translate(121px, 121px); }
+.tile.tile-position-2-3 { transform: translate(121px, 242px); }
+.tile.tile-position-2-4 { transform: translate(121px, 363px); }
+.tile.tile-position-3-1 { transform: translate(242px, 0px); }
+.tile.tile-position-3-2 { transform: translate(242px, 121px); }
+.tile.tile-position-3-3 { transform: translate(242px, 242px); }
+.tile.tile-position-3-4 { transform: translate(242px, 363px); }
+.tile.tile-position-4-1 { transform: translate(363px, 0px); }
+.tile.tile-position-4-2 { transform: translate(363px, 121px); }
+.tile.tile-position-4-3 { transform: translate(363px, 242px); }
+.tile.tile-position-4-4 { transform: translate(363px, 363px); }
+
+@keyframes appear {
+  0% { opacity: 0; transform: scale(0); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.tile-new .tile-inner {
+  animation: appear 200ms ease 100ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes pop {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.tile-merged .tile-inner {
+  z-index: 20;
+  animation: pop 200ms ease 100ms;
+  animation-fill-mode: backwards;
+}
+
+.game-intro {
+  margin-bottom: 0;
+  line-height: 1.65;
+}
+
+.game-explanation {
+  margin-top: 50px;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 520px) {
+  .tile .tile-inner,
+  .tile-128 .tile-inner, 
+  .tile-256 .tile-inner, 
+  .tile-512 .tile-inner {
+    font-size: 25px;
+  }
+  
+  .tile-1024 .tile-inner, 
+  .tile-2048 .tile-inner,
+  .tile-4096 .tile-inner,
+  .tile-8192 .tile-inner {
+    font-size: 20px;
+  }
+  
+  .tile-16384 .tile-inner,
+  .tile-32768 .tile-inner,
+  .tile-65536 .tile-inner,
+  .tile-super .tile-inner {
+    font-size: 18px;
+  }
+
+  .tile-131072 .tile-inner {
+    font-size: 14px;
+  }
+  
+  /* 移动端光晕效果稍微减弱 */
+  .tile-128 .tile-inner,
+  .tile-256 .tile-inner,
+  .tile-512 .tile-inner,
+  .tile-1024 .tile-inner,
+  .tile-2048 .tile-inner,
+  .tile-4096 .tile-inner,
+  .tile-8192 .tile-inner,
+  .tile-16384 .tile-inner,
+  .tile-32768 .tile-inner,
+  .tile-65536 .tile-inner,
+  .tile-131072 .tile-inner,
+  .tile-super .tile-inner {
+    box-shadow: 0 0 20px 5px rgba(243, 215, 116, 0.5), 
+                inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+  }
+}
