@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">  <title>131072</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="style/favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">  <meta name="HandheldFriendly" content="True">  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">131072</h1>
+      <div class="scores-container">        <div class="score-container">0</div>        <div class="best-container">0</div>      </div>    </div>
+
+    <!-- 更新存档控制按钮 -->
+    <div class="save-controls">
+    <p class="game-intro">向<strong>无限2048</strong>发起冲锋吧！&nbsp;&nbsp;&nbsp;
+      <button class="save-button">SAVE</button>
+      <button class="load-button">LOAD</button>
+      <button class="reset-button">RESET</button>
+      <input type="file" id="file-input" accept=".json" style="display: none;">
+</p>
+    </div>
+        <div class="game-container">      <div class="game-message">        <p></p>        <div class="lower">          <a class="retry-button">Try again</a>        </div>      </div>      <div class="grid-container">        <div class="grid-row">          <div class="grid-cell"></div>          <div class="grid-cell"></div>          <div class="grid-cell"></div>          <div class="grid-cell"></div>        </div>        <div class="grid-row">          <div class="grid-cell"></div>          <div class="grid-cell"></div>          <div class="grid-cell"></div>          <div class="grid-cell"></div>        </div>        <div class="grid-row">          <div class="grid-cell"></div>          <div class="grid-cell"></div>          <div class="grid-cell"></div>          <div class="grid-cell"></div>        </div>        <div class="grid-row">          <div class="grid-cell"></div>          <div class="grid-cell"></div>          <div class="grid-cell"></div>          <div class="grid-cell"></div>        </div>      </div>      <div class="tile-container"></div>    </div>    <p class="game-explanation">      <strong class="important">HOW TO PLAY: </strong> Use your <strong>arrow keys</strong> <img src="style/arrow.gif" alt="arrowkey" align="baseline"> to move the tiles.&nbsp;When two identical tiles touch, they merge and become <strong>the next level </strong>of tile.&nbsp;Get a tile to the <strong>17th</strong>  level (<strong>131072</strong>) or <strong>much more higher</strong> scores!
+<br/>
+<br/>
+<strong>The game progress</strong> will be <strong>automatically saved</strong> to the <strong>browser</strong>, or use <strong>buttons</strong> to <strong>save</strong>, <strong>load</strong> or <strong>restart</strong> the game. 
+<br/>
+<br/>
+<strong>玩法</strong>：使用<strong>方向键或手指</strong>移动方块，将<strong>相同数字合并</strong>成更大数字。游戏进度会<strong>自动保存</strong>，或使用按钮<strong>保存、加载或重置</strong>。
+   </p>
+   <hr>
+    <p>
+       <strong class="important">Note:</strong>&nbsp;和 DeepSeek 讨论过，若 2048 这个游戏能<strong>无限合成</strong>，<strong>最高</strong>会到几？算出的<strong>理论值</strong>是：<strong>131072</strong>。<br/>
+<br/>
+Forked by <a href="https://www.miyoushe.com/dby/article/70011878" target="_blank">貘君</a> and DeepSeek-3.1. <br/>
+点击这里报错↑&nbsp;Click here to contact me.<br/><br/>
+The <a href="http://gabrielecirulli.github.io/2048/" target="_blank">original version</a> is created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli</a>. <br/>
+Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <span class="container"><a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollme</a></span><a href="http://asherv.com/threes/" target="_blank">r</a>.</p>
+  </div>
+
+
+  <script src="js/animframe_polyfill.js"></script>  <script src="js/keyboard_input_manager.js"></script>  <script src="js/html_actuator.js"></script>  <script src="js/grid.js"></script>  <script src="js/tile.js"></script>  <script src="js/local_score_manager.js"></script>  <script src="js/game_manager.js"></script>  <script src="js/application.js"></script></body></html>
