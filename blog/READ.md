@@ -40,7 +40,8 @@
   <p>分段</p>
   <strong>粗体</strong><br/>
   <i>斜体</i><br/>
-  链接直接添加：http://rinako.github.io/2048/
+  链接直接添加：http://rinako.github.io/2048/ <br/>
+  或<a href="http://rinako.github.io/2048/">DMMd2048</a>.
   <br/>
   就像在AO3那样。<br/>
   在<strong>时间充裕、条件允许</strong>的情况下，如果你觉得每次都自己敲代码太麻烦，可以用dreamweaver写文件，然后把代码贴过来。<br/>
