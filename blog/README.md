@@ -1,7 +1,7 @@
 使用说明
 ===========
 <p>
-  这里是仅限我们二人的<strong>紧急联络簿</strong>。<br/>
+  这里是仅限我们二人的<strong>紧急联络簿</strong>，代号为<strong>【blog】</strong>。<br/>
   rinako.github.io/blog这个网址对外是无效地址，因而不会被外界知晓。你可以验证。<br/>
   <strong>平时不会启用</strong>，若发生紧急事件，会在这里<strong>更新信息</strong>和<strong>保存证据</strong>。<br/>
   我不相信网盘，因为以前被一度攻破、被塞满了毛片。还好发现得及时，所有文件都从回收站里捞出来了。<br/>
