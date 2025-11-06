@@ -46,6 +46,7 @@
   链接可以直接添加：http://rinako.github.io/2048/ <br/>
   或<a href="http://rinako.github.io/2048/">DMMd2048</a>。<br/>
   <i>// 这是一条注释，不会隐藏显示。斜杠后要加空格。<br/></i>
+  一条分割线↓<hr>
   <br/>
   就像在AO3那样。<br/>
   在<strong>时间充裕、条件允许</strong>的情况下，如果你觉得每次都自己敲代码太麻烦，可以用dreamweaver写文件，然后把代码贴过来。比如要添加表格就比较方便。<br/>
@@ -62,9 +63,9 @@
   三级文件夹以时间<strong>【yyyymmdd】</strong>或<strong>【yyyymmdd_备注】</strong>等命名，用以存放我们<strong>双方</strong>收集到的所有该事件的相关资料或证据。<br/>
   <br/>
   2025.11.06<br/>
-  rinako<br/>
+  rinako<br/></p>
   <hr>
-</p><p>
+<p>
   如有需要，请在这里补充
 
 
