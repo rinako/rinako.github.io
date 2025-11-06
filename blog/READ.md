@@ -43,7 +43,10 @@
   <i>斜体</i><br/>
   链接可以直接添加：http://rinako.github.io/2048/ <br/>
   或<a href="http://rinako.github.io/2048/">DMMd2048</a>。<br/>
-  // 这是一条注释，不会隐藏显示。斜杠后要加空格。<br/>
+  <table align="left">左对齐</table><br/>
+  <table align="center">居中</table><br/>
+  <table align="right">右对齐</table><br/>
+  <i>// 这是一条注释，不会隐藏显示。斜杠后要加空格。<br/></i>
   <br/>
   就像在AO3那样。<br/>
   在<strong>时间充裕、条件允许</strong>的情况下，如果你觉得每次都自己敲代码太麻烦，可以用dreamweaver写文件，然后把代码贴过来。比如要添加表格就比较方便。<br/>
@@ -52,9 +55,14 @@
   <strong>② 文件夹编码</strong><br/>
   一级文件夹<strong>【rinako】</strong>中放的是我方事件的所有资料，<strong>【rycca】</strong>是你方事件的所有资料。<br/>
   二级文件夹以<strong>【编号_事件】</strong>命名，考虑到一些事件需长期追踪进展，就不标年份了。在该目录下创建<strong>【diary.nss】</strong>用以持续更新事件进展或对事件的思考。创建【info.nss】用以整理涉事人员信息。<br/>
-  // nss文件是汉化DMMd时解包出来的文本文件，本质是txt <br/>
+<i>// nss文件是汉化DMMd时解包出来的文本文件，本质是txt。因多年前中过勒索病毒，发现nss、png、mp3等不会被覆盖。 <br/></i>
   <br/>
   三级文件夹以时间<strong>【yyyymmdd】或【yyyymmdd_备注】等命名，用以存放我们双方收集到的所有该事件的相关资料或证据。<br/>
+  <br/>
+  <table align="right">
+</p><p>
+  请在这里补充
+  
 
 
 
