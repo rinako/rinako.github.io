@@ -43,9 +43,6 @@
   <i>斜体</i><br/>
   链接可以直接添加：http://rinako.github.io/2048/ <br/>
   或<a href="http://rinako.github.io/2048/">DMMd2048</a>。<br/>
-  <table align="left">左对齐</table><br/>
-  <table align="center">居中</table><br/>
-  <table align="right">右对齐</table><br/>
   <i>// 这是一条注释，不会隐藏显示。斜杠后要加空格。<br/></i>
   <br/>
   就像在AO3那样。<br/>
@@ -59,14 +56,11 @@
   <br/>
   三级文件夹以时间<strong>【yyyymmdd】或【yyyymmdd_备注】等命名，用以存放我们双方收集到的所有该事件的相关资料或证据。<br/>
   <br/>
-  <table align="right">
+  2025.11.06<br/>
+  rinako<br/>
 </p><p>
-  请在这里补充
-  
+  如有需要，请在这里补充
 
 
 
-
-
-
-  
+<p>
