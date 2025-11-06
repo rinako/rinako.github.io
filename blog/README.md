@@ -55,7 +55,8 @@
   根目录为<strong>【blog】</strong>。<br/>
   一级文件夹<strong>【rinako】</strong>中放的是我方事件的所有资料，<strong>【rycca】</strong>是你方事件的所有资料。其下创建【list.nss】用以整理时间目录。 <i>// 其实是想让空文件物尽其用……</i><br/>
   二级文件夹以<strong>【编号_事件关键词】</strong>命名，考虑到一些事件需长期追踪进展，就不标年份了。在该目录下创建<strong>【diary.nss】</strong>用以持续更新事件进展或对事件的思考。创建【info.nss】用以整理涉事人员信息。<br/>
-<i>// nss文件是汉化DMMd时解包出来的文本文件，本质是txt，可用txt直接打开。因多年前中过勒索病毒，发现nss、png、mp3等不会被覆盖，建议所有txt文档都保存为nss文件。 <br/></i>
+<i>// nss文件是汉化DMMd时解包出来的文本文件，本质是txt，可用txt直接打开。因多年前中过勒索病毒，发现nss、png、mp3等不会被覆盖，建议所有txt文档都保存为nss文件。 <br/>
+  // 隐私信息以约定好的方式加密。<br/></i>
   <br/>
   三级文件夹以时间<strong>【yyyymmdd】</strong>或<strong>【yyyymmdd_备注】</strong>等命名，用以存放我们<strong>双方</strong>收集到的所有该事件的相关资料或证据。<br/>
   <br/>
