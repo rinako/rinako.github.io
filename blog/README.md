@@ -37,8 +37,18 @@
   重点是在新文件夹中上传，一定要<strong>先创建好文件夹 → ③</strong>。
 </p><p>
   <strong>二、文件及文件夹编码、代码</strong><br/>
-  <strong>① 文件代码</strong><br/>
-  所有在github内创建的文件本质上都是txt，但是会用到一些编程语言。于我们而言没那么复杂，只用到一些基本网页代码就可以了，你可以在文件编辑界面确认代码。<br/>
+    <strong>① 文件夹编码</strong><br/>
+  根目录为<strong>【blog】</strong>。<br/>
+  一级文件夹<strong>【rinako】</strong>中放的是我方事件的所有资料，<strong>【rycca】</strong>是你方事件的所有资料。其下创建【list.nss】用以整理事件目录。 <i>// 其实是想让空文件物尽其用……</i><br/>
+  <br/>
+  二级文件夹以<strong>【编号_事件关键词】</strong>命名，考虑到一些事件需长期追踪进展，就不标年份了。在该目录下创建<strong>【diary.nss】</strong>用以持续更新事件进展或对事件的思考。创建【info.nss】用以整理涉事人员信息。<br/>
+<i>// nss文件是汉化DMMd时解包出来的文本文件，本质是txt，可用txt直接打开。因多年前中过勒索病毒，发现nss、png、mp3等不会被覆盖，建议所有txt文档都保存为nss文件。 <br/>
+  // 隐私信息以约定好的方式加密。<br/></i>
+  <br/>
+  三级文件夹以时间<strong>【yyyymmdd】</strong>或<strong>【yyyymmdd_备注】</strong>等命名，用以存放我们<strong>双方</strong>收集到的所有该事件的相关资料或证据。<br/>
+</p>
+  <strong>② 文件编辑代码</strong><br/>
+  所有在github内创建的文件本质上都是<strong>txt，直接打字就好</strong>。若是一些需要显示特殊格式的文件如.md、.html，可能会用到一些编程语言。于我们而言没那么复杂，只用到一些基本网页代码就可以了，你可以在文件编辑界面确认代码。<br/>
   <br/>
   代码示例：换行<br/>
   <p>分段</p>
@@ -52,17 +62,6 @@
   <br/>
   就像在AO3那样。<br/>
   在<strong>时间充裕、条件允许</strong>的情况下，如果你觉得每次都自己敲代码太麻烦，可以用dreamweaver写文件，然后把代码贴过来。比如要添加表格就比较方便。<br/>
-  若没这个心情或<strong>事态紧急</strong>，你想怎么写怎么写，反正打开编辑器能看到正常分段。<br/>
-</p><p>
-  <strong>② 文件夹编码</strong><br/>
-  根目录为<strong>【blog】</strong>。<br/>
-  一级文件夹<strong>【rinako】</strong>中放的是我方事件的所有资料，<strong>【rycca】</strong>是你方事件的所有资料。其下创建【list.nss】用以整理事件目录。 <i>// 其实是想让空文件物尽其用……</i><br/>
-  <br/>
-  二级文件夹以<strong>【编号_事件关键词】</strong>命名，考虑到一些事件需长期追踪进展，就不标年份了。在该目录下创建<strong>【diary.nss】</strong>用以持续更新事件进展或对事件的思考。创建【info.nss】用以整理涉事人员信息。<br/>
-<i>// nss文件是汉化DMMd时解包出来的文本文件，本质是txt，可用txt直接打开。因多年前中过勒索病毒，发现nss、png、mp3等不会被覆盖，建议所有txt文档都保存为nss文件。 <br/>
-  // 隐私信息以约定好的方式加密。<br/></i>
-  <br/>
-  三级文件夹以时间<strong>【yyyymmdd】</strong>或<strong>【yyyymmdd_备注】</strong>等命名，用以存放我们<strong>双方</strong>收集到的所有该事件的相关资料或证据。<br/>
   <br/>
   2025.11.06<br/>
   rinako<br/></p>
