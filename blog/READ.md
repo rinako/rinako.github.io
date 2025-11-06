@@ -50,7 +50,7 @@
   若没这个心情或<strong>事态紧急</strong>，你想怎么写怎么写，反正打开编辑器能看到正常分段。<br/>
 </p><p>
   <strong>② 文件夹编码</strong><br/>
-  一级文件夹<strong>【rinako】</strong>中放的是我方事件的所有资料，<strong>【rycca】</strong>是你方事件的所有资料。其下创建【list.nss】用以整理时间目录。 // 其实是想让空文件物尽其用……<br/>
+  一级文件夹<strong>【rinako】</strong>中放的是我方事件的所有资料，<strong>【rycca】</strong>是你方事件的所有资料。其下创建【list.nss】用以整理时间目录。 <i>// 其实是想让空文件物尽其用……</i><br/>
   二级文件夹以<strong>【编号_事件关键词】</strong>命名，考虑到一些事件需长期追踪进展，就不标年份了。在该目录下创建<strong>【diary.nss】</strong>用以持续更新事件进展或对事件的思考。创建【info.nss】用以整理涉事人员信息。<br/>
 <i>// nss文件是汉化DMMd时解包出来的文本文件，本质是txt。因多年前中过勒索病毒，发现nss、png、mp3等不会被覆盖。 <br/></i>
   <br/>
