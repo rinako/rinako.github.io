@@ -45,8 +45,8 @@
   <i>斜体</i><br/>
   链接可以直接添加：http://rinako.github.io/2048/ <br/>
   或<a href="http://rinako.github.io/2048/">DMMd2048</a>。<br/>
-  <br/>
   <i>// 这是一条注释，不会隐藏显示。斜杠后要加空格。<br/></i>
+  <br/>
   一条分割线↓<hr>
   <br/>
   就像在AO3那样。<br/>
