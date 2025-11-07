@@ -18,7 +18,8 @@
   <strong>② 添加文件</strong><br/>
   github中不能直接创建文件夹，<strong>只能创建文件夹下的文件</strong>。<br/>
   注意文件编辑界面上的<strong>路径</strong>：<br/>
-  在空格处写<strong>【文件名+后缀名】</strong>能直接创建文件。
+  在空格处写<strong>【文件名+后缀名】</strong>能直接创建文件。<br/>
+  可以批量上传小于25M的文件。
 </p><p>
   <strong>③ 添加文件夹</strong><br/>
   可以利用路径添加文件夹。<br/>
