@@ -3,7 +3,7 @@
 <p>
   这里是仅限我们二人的<strong>紧急联络簿</strong>，代号为<strong>【blog】</strong>。<br/>
   rinako.github.io/blog这个网址对外是无效地址，因而不会被外界知晓。你可以验证。<br/>
-  如发生紧急或需观察、追踪调查处理的事件，会在这里<strong>更新信息</strong>和<strong>保存证据</strong>。<br/>
+  如发生<strong>紧急</strong>或<strong>需观察、追踪调查处理</strong>的事件，会在这里<strong>更新信息</strong>和<strong>保存证据</strong>。<br/>
   我不相信网盘，因为以前被一度攻破、被塞满了毛片。还好发现得及时，所有文件都从回收站里捞出来了。<br/>
   我查了一下github过去受到攻击的消息，发现网站的相应比较及时。但我也不能保证这里不会被开盒的盯上——毕竟黑客的攻击总会绕开自己。
 </p><p>
